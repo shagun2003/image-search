@@ -1,0 +1,124 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:'Balsamiq Sans', cursive;
+    line-height: 1.6;
+    background-color:lightgray ;
+}
+h1{
+    font-size:36px;
+    font-weight: bold;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom: 50px;
+}
+form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px ;
+}
+form input
+{
+   width: 300px; 
+   margin-right: 10px;
+   height: 37px;
+   padding: 10px;
+   border-radius: 5px;
+   border:none;
+   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+   font-size: 17px;
+   color:#333;
+}
+form button{
+    width: 80px;
+    padding: 10px;
+    height: 37px;
+    background-color:red;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:17px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+    font-family:'Balsamiq Sans', cursive;
+}
+.container
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.row
+{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius:5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.row img{
+width:100%;
+height: 100%;
+object-fit: cover;
+transition: opacity 0.2s ease-in-out;
+}
+.row img:hover
+{
+    opacity:0.8;
+}
+.row a{
+   font-size: 28px;
+   text-decoration: none;
+   color:#333;
+   display:block;
+   padding:10px;
+   text-transform:capitalize;
+    }
+#btn
+    {
+        background-color:#4CAF50 ;
+        font-family:'Balsamiq Sans', cursive;
+        font-size: 18px;
+        border:none;
+        color:#fff;
+        padding: 10px 20px;
+        text-align: center;
+        display:block;
+        margin:30px auto;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+
+    }
+    @media screen and (max-width:768px) {
+        .container{
+            padding: 20px;
+        }
+        .row
+        {
+            width: 45%;
+        }
+       
+        
+    }
+    @media screen and (max-width:480px)
+    {
+        .row
+        {
+            width: 100%;
+        }
+    }
+    .container img:hover
+    {
+     opacity:0.8;   
+     transform:translateY(-1.5px);
+    }
